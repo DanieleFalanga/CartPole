@@ -134,7 +134,7 @@ def run(is_training=True, render=False,
         q_saved = q.copy()
 
 def main():
-
+    #Correct Run
     run(is_training=True, render=False, 
         learning_rate_alpha = 0.2,
         discount_factor_gamma = 0.99,

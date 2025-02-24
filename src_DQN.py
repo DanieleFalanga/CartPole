@@ -222,4 +222,19 @@ def run(is_training=True, render=False,
     plot_data[label] = reward_to_plot
     
 if __name__ == "__main__":
-    run()
+    run(is_training=True, render=False, 
+        learning_rate_alpha=0.2, 
+        discount_factor_gamma=0.99, 
+        epsilon=1, 
+        epsilon_decay_rate=0.00001, 
+        n_episodes=100000,
+        batch_size = 128)
+    
+    run(is_training=True, render=False, 
+        learning_rate_alpha=0.2, 
+        discount_factor_gamma=0.99, 
+        epsilon=1, 
+        epsilon_decay_rate=0.00001 , 
+        n_episodes=100000,
+        batch_size = 128)
+    
